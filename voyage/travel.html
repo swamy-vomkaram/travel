@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VOYAGE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      text-decoration: none;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    .main-container {
+      min-height: 100vh;
+      background-image: url("D:/js/.vscode/voyage/travel.jpg"); /* Use relative image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    nav {
+      width: 100%;
+      margin: auto;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .logo {
+      width: 50px;
+        margin-left: 5%;
+    }
+    #menu-toggle {
+      display: none;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+  
+    }
+
+    nav ul li a {
+      font-size: 16px;
+      color: whitesmoke;
+    }
+
+    .login {
+      padding: 10px 20px;
+      font-size: 15px;
+      margin-right: 100px;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: whitesmoke;
+      background-color: #d86908;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .login:hover {
+      transform: scale(1.1);
+    }
+
+    .content {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: whitesmoke;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-top: 10px;
+      max-width: 600px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .btn button {
+      padding: 10px 30px;
+      background-color: #d86908;
+      border: none;
+      color: whitesmoke;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .btn button:hover {
+      transform: scale(0.95);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      nav ul {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        display: none;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+      }
+
+      .login {
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <nav class="navbar">
+      <img src="D:\js\.vscode\voyage\logo.jpg" class="logo" alt="Logo" />
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <ul>
+        <li><a href="travel.html"><u>HOME</u></a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        <li><a href="places.html">PLACES</a></li>
+        <li><button class="login" onclick="location.href='login.html'">Login</button></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>Plan Your Journey With Us</h1>
+      <p>Reach your destination with us. We will take care of your demands and fulfill all your needs.<br>We are the best travel agents of all time.</p>
+      <div class="btn">
+        <button onclick="location.href='knowmore.html'">Know More</button>
+        <button onclick="location.href='booknow.html'">Book Now</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

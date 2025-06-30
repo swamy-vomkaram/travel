@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Places</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            background-image: url("D:/js/.vscode/voyage/about.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .place-card img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .title {
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            background-color: #d86908;
+            color: whitesmoke;
+        }
+        .card:hover {
+            transform: scale(1.03);
+        }
+         nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: auto;
+      padding: 15px 0;
+    background-color:#d86908;
+    }
+
+    .logo {
+      width: 50px;
+      margin-left: 5%;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 18px;
+    }
+
+    nav ul li a {
+      font-size: 16px;
+      color:whitesmoke;
+      text-decoration: none;
+    }
+
+    .login {
+      padding: 10px 27px;
+      margin-left: 15px;
+      margin-right: 60px;
+      font-size: 15px;
+      font-weight: 600;
+      color:#d86908;
+      background-color:whitesmoke;
+      border: none;
+      outline:none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: .3s linear;
+    }
+    .login:hover{
+        scale:1.1;
+    }
+    </style>
+</head>
+<body>
+     <nav class="navbar">
+      <img src="D:\js\.vscode\voyage\logo.jpg" class="logo" alt="Logo"/>
+      
+
+      <ul>
+        <li><a href="travel.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="reviews.html">REVIEWS</a></li>
+        <li><a href="places.html"><u>PLACES</u></a></li>
+     
+        <button class="login" onclick="window.location.href='login.html'">Login</button>
+      </ul>
+    </nav>
+    <div class="container">
+        <div class="title">Top Travel Destinations</div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card place-card">
+                    <img src="D:\js\.vscode\voyage\paris.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris, France</h5>
+                        <p class="card-text">Explore the city of love with iconic landmarks like the Eiffel Tower and Louvre Museum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card place-card">
+                    <img src="D:\js\.vscode\voyage\bali.jpg" class="card-img-top" alt="Bali">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali, Indonesia</h5>
+                        <p class="card-text">Relax on stunning beaches, explore temples, and enjoy vibrant culture and nature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card place-card">
+                    <img src="D:\js\.vscode\voyage\newyork.jpg" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">New York, USA</h5>
+                        <p class="card-text">Visit the city that never sleeps—Times Square, Central Park, and Broadway await.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
